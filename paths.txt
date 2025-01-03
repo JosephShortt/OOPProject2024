@@ -1,0 +1,4 @@
+embeddings.txt
+google-1000.txt
+swap.txt
+out.txt

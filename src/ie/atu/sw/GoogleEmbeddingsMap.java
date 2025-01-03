@@ -42,4 +42,9 @@ public class GoogleEmbeddingsMap implements WordEmbeddings{
 	    Map<String, double[]> getWordMap() {
 	        return wordMap;
 	    }
+	    
+	    @Override
+	    public int getSize() {
+	    	return wordMap.size();
+	    }
 	}

@@ -64,4 +64,9 @@ public class GloVeEmbeddingsMap implements WordEmbeddings{
 	        }
 	        return count;
 	    }
+	    
+	    @Override
+	    public int getSize() {
+	    	return wordMap.size();
+	    }
 	}

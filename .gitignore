@@ -1,0 +1,21 @@
+# Compiled class files and binary folders
+*.class
+bin/
+
+# Eclipse project settings and metadata
+.metadata/
+.settings/
+.classpath
+.project
+
+# Temporary files
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+# Local configuration
+local.properties
+.loadpath
+.recommenders
