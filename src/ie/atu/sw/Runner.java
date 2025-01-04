@@ -2,7 +2,38 @@ package ie.atu.sw;
 
 import java.util.Scanner;
 
+/**
+ * The Runner class serves as the main entry point for the text processing application.
+ * It handles user input, file path configuration, and coordinates the interaction between
+ * different components of the system including word embeddings and text processing.
+ * 
+ * The class provides functionality to:
+ * - Load GloVe and Google-1000 word embeddings
+ * - Process text files using concurrent operations
+ * - Search for words in both embedding sets
+ * - Display statistics about the embeddings
+ * 
+ * @author [Joseph Shortt]
+ * @version 1.0
+ */
 public class Runner {
+	
+	 /**
+     * The main entry point of the application.
+     * Handles user interaction through a menu-driven interface and coordinates
+     * the loading of embeddings and text processing operations.
+     * 
+     * The method performs the following operations:
+     * - Collects file paths from user input
+     * - Initializes word embeddings and text processor
+     * - Provides menu options for various operations
+     * - Processes text files and performs word searches
+     * 
+     * Time Complexity: O(n) where n represents the size of input being processed
+     * 
+     * @param args Command line arguments (not used)
+     * @throws Exception If there are issues with file operations or text processing
+     */
     public static void main(String[] args) throws Exception {
     	//File paths
         String embeddingsFile = "";
@@ -85,7 +116,18 @@ public class Runner {
         }
         System.out.println("Thanks for using my program!!");
     }
-
+    
+    /**
+     * Displays a progress bar in the console to indicate the progress of an operation.
+     * The progress bar uses Unicode block characters to create a visual representation
+     * of the completion percentage.
+     * 
+     * Time Complexity: O(n) where n is the size of the progress bar (fixed at 50)
+     * 
+     * @param index The current progress index
+     * @param total The total number of steps to complete
+     */
+    
     public static void printProgress(int index, int total) {
         if (index > total) return;
         int size = 50;

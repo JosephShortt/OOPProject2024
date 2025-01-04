@@ -1,9 +1,20 @@
 
 package ie.atu.sw;
 
+/**
+ * Handles menu display for the text processing application.
+ *
+ * @version 1.0.0
+ * @author [Joseph Shortt]
+ */
+
 public class Menu {
-	//Time Complexity - O(1)
-	//Menu class to display user menu
+	
+	 /**
+     * Displays application menu with color formatting.
+     * Time Complexity: O(1)
+     */
+	
 	public void loadMenu() {
 		System.out.println(ConsoleColour.RED_BOLD);
 		System.out.println("************************************************************");
